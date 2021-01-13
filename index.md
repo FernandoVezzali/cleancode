@@ -55,9 +55,6 @@ int d;
 ```csharp
 int daySinceModification;
 ```
-
-**[⬆ Back to top](#table-of-contents)**
-
 </details>
 
 <details>
