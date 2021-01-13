@@ -35,3 +35,44 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+# Clean Code .NET
+
+## Naming
+
+<details>
+  <summary><b>Avoid using bad names</b></summary>
+A good name allows the code to be used by many developers. The name should reflect what it does and give context.
+
+**Bad:**
+
+```csharp
+int d;
+```
+
+**Good:**
+
+```csharp
+int daySinceModification;
+```
+
+**[⬆ Back to top](#table-of-contents)**
+
+</details>
+
+<details>
+  <summary><b>Avoid Misleading Names</b></summary>
+
+Name the variable to reflect what it is used for.
+
+**Bad:**
+
+```csharp
+var dataFromDb = db.GetFromService().ToList();
+```
+
+**Good:**
+
+```csharp
+var listOfEmployee = _employeeService.GetEmployees().ToList();
+```
